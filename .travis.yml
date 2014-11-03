@@ -3,3 +3,12 @@ node_js:
 - '0.10'
 after_success:
 - gulp coverage
+deploy:
+  provider: npm
+  email: d2ltravisdeploy@d2l.com
+  api_key:
+    secure: M8Rlk/VMh8G/FV/thf9QYj6apP9UrU4Y96pAo8LOyxhWyStDw5j+/7mVqMIB/1o8+c6lXAxGJuTGCDDmlWAEN9HmCgnt2pOnB82WfIZl3UagzZM6SiDtyvvG9NsZrz4ROjQztMA+6GYIdSE1di0Qf+YErGBOVp3zNfVpGWa/e/s=
+  on:
+    tags: true
+    repo: Desire2Learn-Valence/web-library-loader
+    all_branches: true
