@@ -19,24 +19,27 @@ npm install web-library-loader
 ```javascript
 var webLibraryLoader = require('web-library-loader');
 
-webLibraryLoader.jquery()
+var opts = {
+	configPath: '../path/to/instance/config'
+};
+
+webLibraryLoader.jquery( opts )
 	.then( function( location ) {
 		console.log( location );
-	} ).fail( function( err ) {
-		// configuration error
 	} );
 
 // same API for jqueryui and valenceui
-webLibraryLoader.jqueryui()
+webLibraryLoader.jqueryui( opts )
 	.then( ... );
-webLibraryLoader.valenceui()
+webLibraryLoader.valenceui( opts )
 	.then( ... );
 ```
 
 As you can see above, this library [makes use of promises](https://www.npmjs.org/package/q).
 
-This library also requires that the `CONFIG_PATH` environment variable be set
-to your `{instance}\config` directory.
+### Options
+* configPath: Path to the `config` directory under the root of your instance.
+This will default to the `CONFIG_PATH` environment variable if excluded.
 
 ## Contributing
 

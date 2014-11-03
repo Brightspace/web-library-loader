@@ -1,5 +1,5 @@
 {
-  "name": "web-library-loader",
+  "name": "d2l-web-library-loader",
   "version": "0.0.1",
   "description": "Utility to get locations of 3rd party libraries",
   "main": "lib/index.js",
