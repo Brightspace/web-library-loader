@@ -1,7 +1,7 @@
 {
   "name": "d2l-web-library-loader",
-  "version": "1.0.0",
-  "description": "Utility to get locations of 3rd party libraries",
+  "version": "2.0.0",
+  "description": "Utility to get locations of 3rd party libraries used by a D2L instance, such as jQuery, jQuery UI, and Valence UI",
   "main": "lib/index.js",
   "scripts": {
     "test": "gulp"
