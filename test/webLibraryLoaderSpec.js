@@ -22,7 +22,7 @@ describe( 'Web Library Loader', function() {
 
 		webLibraryLoader.jquery()
 			.then( function( file ) {
-				expect( file ).toBe( 'https://mycdn.com/jquery/lib.js' );
+				expect( file ).toBe( 'https://mycdn.com/jquery/jquery.js' );
 				done();
 			} );
 
@@ -32,7 +32,7 @@ describe( 'Web Library Loader', function() {
 
 		webLibraryLoader.jqueryui()
 			.then( function( file ) {
-				expect( file ).toBe( 'https://mycdn.com/jqueryui/lib.js' );
+				expect( file ).toBe( 'https://mycdn.com/jqueryui/jquery-ui.js' );
 				done();
 			} );
 

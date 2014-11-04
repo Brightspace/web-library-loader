@@ -1,4 +1,4 @@
 {
-	"jquery-location": "https://mycdn.com/jquery/lib.js",
-	"jqueryui-location": "https://mycdn.com/jqueryui/lib.js"
+	"jqueryBaseLocation": "https://mycdn.com/jquery/",
+	"jqueryUIBaseLocation": "https://mycdn.com/jqueryui/"
 }
