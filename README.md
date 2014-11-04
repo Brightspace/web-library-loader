@@ -39,7 +39,6 @@ As you can see above, this library [makes use of promises](https://www.npmjs.org
 
 ### Options
 * configPath: Path to the `config` directory under the root of your instance.
-This will default to the `CONFIG_PATH` environment variable if excluded.
 
 ## Contributing
 

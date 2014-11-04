@@ -4,23 +4,13 @@ var path = require('path'),
 	webLibraryLoader = require('../');
 
 var dataPath = path.join( __dirname, 'data' );
+var opts = { configPath: path.join( dataPath, 'config' ) };
 
 describe( 'Web Library Loader', function() {
 
-	var oldEnv;
-
-	beforeEach( function() {
-		oldEnv = process.env.CONFIG_PATH;
-		process.env.CONFIG_PATH = path.join( dataPath, 'config' );
-	} );
-
-	afterEach( function() {
-		process.env.CONFIG_PATH = oldEnv;
-	} );
-
 	it( 'should load jquery', function( done ) {
 
-		webLibraryLoader.jquery()
+		webLibraryLoader.jquery( opts )
 			.then( function( file ) {
 				expect( file ).toBe( 'https://mycdn.com/jquery/jquery.js' );
 				done();
@@ -30,7 +20,7 @@ describe( 'Web Library Loader', function() {
 
 	it( 'should load jquery-ui', function( done ) {
 
-		webLibraryLoader.jqueryui()
+		webLibraryLoader.jqueryui( opts )
 			.then( function( file ) {
 				expect( file ).toBe( 'https://mycdn.com/jqueryui/jquery-ui.js' );
 				done();
@@ -40,7 +30,7 @@ describe( 'Web Library Loader', function() {
 
 	it( 'should load valence-ui', function( done ) {
 
-		webLibraryLoader.valenceui()
+		webLibraryLoader.valenceui( opts )
 			.then( function( file ) {
 				expect( file ).toBe( 'https://mycdn.com/vui/1.0/valenceui.js' );
 				done();
