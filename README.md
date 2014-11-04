@@ -1,4 +1,4 @@
-# web-library-loader
+# d2l-web-library-loader
 [![NPM version][npm-image]][npm-url]
 [![Build status][ci-image]][ci-url]
 [![Coverage Status][coverage-image]][coverage-url]
@@ -20,7 +20,7 @@ npm install web-library-loader
 var webLibraryLoader = require('web-library-loader');
 
 var opts = {
-	configPath: '../path/to/instance/config'
+	configPath: '/path/to/instanceDir/config'
 };
 
 webLibraryLoader.jquery( opts )
