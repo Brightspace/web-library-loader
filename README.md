@@ -4,7 +4,7 @@
 [![Coverage Status][coverage-image]][coverage-url]
 
 Utility to get locations of 3rd party libraries used by a D2L instance, such
-as jQuery, jQuery UI and Valence UI.
+as jQuery, jQuery UI, and Valence UI.
 
 ## Installation
 
