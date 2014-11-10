@@ -49,7 +49,7 @@ contributions should make use of them.
 
 [npm-url]: https://npmjs.org/package/web-library-loader
 [npm-image]: https://badge.fury.io/js/web-library-loader.png
-[ci-image]: https://travis-ci.org/Desire2Learn-Valence/web-library-loader.svg?branch=master
-[ci-url]: https://travis-ci.org/Desire2Learn-Valence/web-library-loader
-[coverage-image]: https://coveralls.io/repos/Desire2Learn-Valence/web-library-loader/badge.png?branch=master
-[coverage-url]: https://coveralls.io/r/Desire2Learn-Valence/web-library-loader?branch=master
+[ci-image]: https://travis-ci.org/Brightspace/web-library-loader.svg?branch=master
+[ci-url]: https://travis-ci.org/Brightspace/web-library-loader
+[coverage-image]: https://coveralls.io/repos/Brightspace/web-library-loader/badge.png?branch=master
+[coverage-url]: https://coveralls.io/r/Brightspace/web-library-loader?branch=master
