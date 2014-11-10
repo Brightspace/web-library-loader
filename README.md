@@ -47,8 +47,8 @@ As you can see above, this library [makes use of promises](https://www.npmjs.org
 This repository is configured with [EditorConfig](http://editorconfig.org) rules and
 contributions should make use of them.
 
-[npm-url]: https://npmjs.org/package/web-library-loader
-[npm-image]: https://badge.fury.io/js/web-library-loader.png
+[npm-url]: https://npmjs.org/package/d2l-web-library-loader
+[npm-image]: https://badge.fury.io/js/d2l-web-library-loader.png
 [ci-image]: https://travis-ci.org/Brightspace/web-library-loader.svg?branch=master
 [ci-url]: https://travis-ci.org/Brightspace/web-library-loader
 [coverage-image]: https://coveralls.io/repos/Brightspace/web-library-loader/badge.png?branch=master
