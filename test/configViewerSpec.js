@@ -47,7 +47,7 @@ describe( 'Config Viewer (Asynchronous)', function() {
 
 describe( 'Config Viewer (Synchronous)', function() {
 
-	it( 'should load existing config', function( ) {
+	it( 'should load existing config', function() {
 		expect(
 				configViewer.readConfigSync( 'test1', opts )
 			).toEqual( { foo: "bar" } );
@@ -58,20 +58,20 @@ describe( 'Config Viewer (Synchronous)', function() {
 				configViewer.readConfigSync(
 					 	'doesnotexist',
 						{ configPath: path.join( dataPath, 'doesnotexist' ) }
-					)
+					);
 			}).toThrow();
 	} );
 
 	it( 'should throw if config is not passed in', function() {
 		expect( function() {
-				configViewer.readConfigSync( 'doesnotexist' )
+				configViewer.readConfigSync( 'doesnotexist' );
 			}).toThrow();
 	} );
 
 	it( 'should throw if config file does not exist', function() {
 		expect( function() {
-				configViewer.readConfigSync( 'doesnotexist', opts )
-			} ).toThrow();
+				configViewer.readConfigSync( 'doesnotexist', opts );
+			}).toThrow();
 	} );
 
 } );

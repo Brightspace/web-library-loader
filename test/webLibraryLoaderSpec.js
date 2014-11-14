@@ -8,7 +8,7 @@ var opts = { configPath: path.join( dataPath, 'config' ) };
 
 describe( 'Web Library Loader', function() {
 
-	it( 'should load jquery', function( done ) {
+	it( 'should load jquery (Asynchronous)', function( done ) {
 
 		webLibraryLoader.jquery( opts )
 			.then( function( file ) {
@@ -18,7 +18,7 @@ describe( 'Web Library Loader', function() {
 
 	} );
 
-	it( 'should load jquery-ui', function( done ) {
+	it( 'should load jquery-ui (Asynchronous)', function( done ) {
 
 		webLibraryLoader.jqueryui( opts )
 			.then( function( file ) {
@@ -28,7 +28,7 @@ describe( 'Web Library Loader', function() {
 
 	} );
 
-	it( 'should load valence-ui', function( done ) {
+	it( 'should load valence-ui (Asynchronous)', function( done ) {
 
 		webLibraryLoader.valenceui( opts )
 			.then( function( file ) {
@@ -44,21 +44,21 @@ describe( 'Web Library Loader (Synchronous)', function() {
 
 	it( 'should load jquery', function() {
 
-		var file = webLibraryLoader.jquerySync( opts )
+		var file = webLibraryLoader.jquerySync( opts );
 		expect( file ).toBe( 'https://mycdn.com/jquery/jquery.js' );
 
 	} );
 
 	it( 'should load jquery-ui', function() {
 
-		var file = webLibraryLoader.jqueryuiSync( opts )
+		var file = webLibraryLoader.jqueryuiSync( opts );
 		expect( file ).toBe( 'https://mycdn.com/jqueryui/jquery-ui.js' );
 
 	} );
 
 	it( 'should load valence-ui', function() {
 
-		var file = webLibraryLoader.valenceuiSync( opts )
+		var file = webLibraryLoader.valenceuiSync( opts );
 		expect( file ).toBe( 'https://mycdn.com/vui/1.0/valenceui.js' );
 
 	} );
