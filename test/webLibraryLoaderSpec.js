@@ -39,3 +39,28 @@ describe( 'Web Library Loader', function() {
 	} );
 
 } );
+
+describe( 'Web Library Loader (Synchronous)', function() {
+
+	it( 'should load jquery', function() {
+
+		var file = webLibraryLoader.jquerySync( opts )
+		expect( file ).toBe( 'https://mycdn.com/jquery/jquery.js' );
+
+	} );
+
+	it( 'should load jquery-ui', function() {
+
+		var file = webLibraryLoader.jqueryuiSync( opts )
+		expect( file ).toBe( 'https://mycdn.com/jqueryui/jquery-ui.js' );
+
+	} );
+
+	it( 'should load valence-ui', function() {
+
+		var file = webLibraryLoader.valenceuiSync( opts )
+		expect( file ).toBe( 'https://mycdn.com/vui/1.0/valenceui.js' );
+
+	} );
+
+} );
