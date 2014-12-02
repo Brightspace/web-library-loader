@@ -59,8 +59,8 @@ describe( 'Web Library Loader (Synchronous)', function() {
 	it( 'should load valence-ui', function() {
 
 		var file = webLibraryLoader.valenceuiSync( opts );
-		expect( file[0] ).toBe( 'https://mycdn.com/vui/1.0/valenceui.css' );
-		expect( file[1] ).toBe( 'https://mycdn.com/vui/1.0/valenceui.js' );
+		expect( file.Css ).toBe( 'https://mycdn.com/vui/1.0/valenceui.css' );
+		expect( file.JavaScript ).toBe( 'https://mycdn.com/vui/1.0/valenceui.js' );
 
 	} );
 
