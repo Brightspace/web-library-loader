@@ -64,4 +64,9 @@ describe( 'Web Library Loader (Synchronous)', function() {
 
 	} );
 
+	it( 'should load reset stylesheet', function() {
+		var file = webLibraryLoader.resetSync( opts );
+		expect( file.Css ).toBe( 'https://mycdn.com/reset/1.0/reset.css' );
+	})
+
 } );
